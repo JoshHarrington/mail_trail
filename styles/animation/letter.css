@@ -1,0 +1,89 @@
+.letter {
+	font-size: 26px;
+	width: 27em;
+	height: 11em;
+	background: white;
+	/* transition: all 0.2s; */
+}
+
+.address {
+	font-size: inherit;
+	float: left;
+	margin-top: 8%;
+	margin-left: 5%;
+}
+.address p {
+	margin: 0;
+}
+
+.stamp {
+	font-size: inherit;
+	width: 5%;
+	height: 15%;
+	float: right;
+	margin-right: 1em;
+	margin-top: 1em;
+	animation: stamp 5s forwards 1;
+}
+
+.letter[class*="num"] {
+	position: absolute;
+}
+
+.letter.num1 {
+	animation: 	num1 5s forwards 1,
+				letters 5s forwards 1;
+}
+
+.letter.num1 .stamp {
+	background-color: yellowgreen;
+}
+
+.letter.num2 {
+	background-color: #f3f3f3;
+	animation: 	num2 5s forwards 1,
+				letters 5s forwards 1;
+}
+.letter.num2 .stamp {
+	background-color: crimson;
+}
+
+.letter.num3 {
+	animation: 	num3 5s forwards 1,
+				letters 5s forwards 1;
+}
+.letter.num3 .stamp {
+	background-color: paleturquoise;
+}
+
+.letter.num4 {
+	animation: 	num4 5s forwards 1,
+				letters 5s forwards 1;
+}
+.letter.num4 .stamp {
+	background-color: darkkhaki;
+}
+
+.letter.num5 {
+	animation: 	num5 5s forwards 1,
+				letters 5s forwards 1;
+}
+.letter.num5 .stamp {
+	background-color: indianred;
+}
+
+.letter.num6 {
+	animation: 	num6 5s forwards 1,
+				letters 5s forwards 1;
+}
+.letter.num6 .stamp {
+	background-color: tan;
+}
+
+.letter.num7 {
+	animation: 	num7 5s forwards 1,
+				letters 5s forwards 1;
+}
+.letter.num7 .stamp {
+	background-color: hotpink;
+}

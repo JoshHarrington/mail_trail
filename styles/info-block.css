@@ -1,0 +1,47 @@
+.info-block {
+    background: white;
+    border: 1px solid #efefef; 
+    padding: 1.3em;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border-width: 1px 1px 0; */
+}
+
+.info-block svg {
+    float: left;
+    width: 15em;
+    flex-basis: 30%;
+}
+.info-block h2 {
+    margin: 0;
+    font-size: 3em;
+    flex-basis: 70%;
+}
+.info-block p {
+    flex-basis: 70%;
+}
+
+.block-pos-right svg {
+    float: right;
+}
+
+.icon-stamp {
+    /* fill: #5b6aff; */
+}
+
+.stamp-500 {
+    width: 100%;
+    height: 34px;
+    background: url('../assets/images/special-delivery.jpg');
+    /* background: linear-gradient(
+                    to right, 
+                    rgba(255,255,255,0.7) 0%,
+                    rgba(255,255,255,0.7) 100%
+                ), 
+                url('../assets/images/special-delivery.jpg'); */
+    background-repeat: repeat;
+    background-size: 200px;
+    background-position: -10px -10px;
+}

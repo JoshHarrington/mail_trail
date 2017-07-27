@@ -1,0 +1,23 @@
+body {
+     margin: 0 0 4em; 
+}
+
+body.slanted-exp {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body > div + div {
+    margin-top: 2em;
+}
+
+.container {
+    max-width: 60em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,6 @@
+.earth-logo {
+    width: 3em;
+    animation: earth-spin 10s infinite;
+    transition: fill .3s;
+    fill: black;
+}

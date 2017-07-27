@@ -1,0 +1,30 @@
+.mat {
+	height: 338px;
+    width: 548px;
+	display: inline-block;
+	position: relative;
+	padding: 18px;
+	overflow: hidden;
+	animation: smarten 5s forwards 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.mat-title {
+	font-family: 'Dancing Script', cursive;
+	font-size: 130px;
+	animation: mat-title 5s forwards 1;
+	display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 12%;
+}
+.smart-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	animation: smart-title 5s forwards 1;
+}

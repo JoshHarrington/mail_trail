@@ -1,0 +1,191 @@
+@keyframes stamp {
+	0%, 20% {
+		opacity: 1;
+	}
+	50%, 100% {
+		opacity: 0;
+	}
+}
+
+@keyframes letters {
+	0%, 20% {
+        font-size: 4px;
+        width: 27em;
+        border: 1px solid transparent;
+	}
+	65%, 100% {
+        font-size: 10px;
+        width: 19em;
+        border: 1px solid #e6e6e6;
+	}
+}
+
+@keyframes num1 {
+	0%, 20% {
+        top: 22em;
+        left: 23em;
+		height: 11em;
+		transform: rotate(21deg);
+		font-family: 'Dancing Script', cursive;
+	}
+	65%, 100% {
+        top: 8em;
+        left: 2em;
+		height: 9em;
+		transform: rotate(0deg);
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+}
+
+@keyframes num2 {
+	0%, 20% {
+		top: 22em;
+        left: 23em;
+        height: 11em;
+		transform: rotate(-22deg);
+		background-color: #f3f3f3;
+		font-family: 'Architects Daughter', cursive;
+		box-shadow: inset 0px 0px 0px 0px transparent;
+	}
+	65%, 100% {
+		top: 18em;
+        left: 2em;
+        height: 9em;
+		transform: rotate(0deg);
+		background-color: white;
+		font-family: 'Source Sans Pro', sans-serif;
+		box-shadow: inset 0px -14px 0px 0px rgba(255, 0, 0, 0.3);
+	}
+}
+
+@keyframes num3 {
+	0%, 20% {
+        top: 52em;
+        left: 83em;
+        height: 11em;
+        transform: rotate(-141deg);
+        font-family: 'Shadows Into Light', cursive;
+	}
+	65%, 100% {
+        top: 28em;
+        left: 2em;
+        height: 11em;
+		transform: rotate(0deg);
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+}
+
+@keyframes num4 {
+	0%, 20% {
+        font-family: 'Gloria Hallelujah', cursive;
+        top: 24em;
+        left: 46em;
+        height: 11em;
+        line-height: 1.5;
+        transform: rotate(78deg);
+        box-shadow: inset 0px 0 0px 0px transparent;
+	}
+	65%, 100% {
+        font-family: 'Source Sans Pro', sans-serif;
+        top: 8em;
+        left: 22em;
+        height: 11em;
+        line-height: 1.5;
+		transform: rotate(0deg);
+        box-shadow: inset 0px -14px 0px 0px rgba(35, 199, 35, 0.45);
+	}
+}
+
+@keyframes num5 {
+	0%, 20% {
+        font-family: 'Indie Flower', cursive;
+        top: 46em;
+        left: 31em;
+        height: 11em;
+        transform: rotate(6deg);
+        background-color: #f5e7e2;
+	}
+	65%, 100% {
+        font-family: 'Source Sans Pro', sans-serif;
+        top: 20em;
+        left: 22em;
+        height: 9em;
+		transform: rotate(0deg);
+        background-color: white;
+	}
+}
+
+@keyframes num6 {
+	0%, 20% {
+        font-family: 'Roboto Condensed', sans-serif;
+        top: 23em;
+        left: 80em;
+        height: 11em;
+        transform: rotate(10deg);
+	}
+	65%, 100% {
+        font-family: 'Source Sans Pro', sans-serif;
+		transform: rotate(0deg);
+        top: 30em;
+        left: 22em;
+        height: 11em;
+	}
+}
+
+@keyframes num7 {
+	0%, 20% {
+        font-family: 'Roboto Condensed', sans-serif;
+        top: 50em;
+        left: 52em;
+        transform: rotate(-4deg);
+        height: 11em;
+	}
+	65%, 100% {
+        top: 8em;
+        left: 42em;
+        height: 9em;
+        font-family: 'Source Sans Pro', sans-serif;
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes smarten {
+	from {
+		background: burlywood;
+		border: 1px solid burlywood;
+		border-radius: 0;
+	}
+	to {
+		background: white;
+		border: 3px solid #b5b5b5;
+        border-radius: 13px;
+	}
+}
+
+@keyframes mat-title {
+    0%, 20% {
+        opacity: 1;
+    }
+    70%, 100% {
+        opacity: 0;
+    }
+}
+@keyframes smart-title {
+    0%, 50% {
+        opacity: 0;
+        top: -18px;
+    }
+    80%, 100% {
+        opacity: 1;
+        top: 18px;
+    }
+}
+
+@keyframes earth-spin {
+	from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

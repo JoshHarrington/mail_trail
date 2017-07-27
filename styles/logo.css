@@ -1,0 +1,14 @@
+
+.logo-block {
+    cursor: default;
+    background: red;
+    padding-top: 7em;
+}
+
+.logo-block h1 {
+    display: inline-block;
+    margin-left: .3em;
+}
+.logo-block:hover .earth-logo {
+    fill: green;
+}

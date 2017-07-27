@@ -1,0 +1,54 @@
+.slanty {
+  background: white;
+	width: 70px;
+	top: 0;
+  height: 300vh;
+  position: absolute;
+  left: calc(50vw - 69px);
+  transform: skew(20deg);
+	overflow: hidden;
+	z-index: 4;
+}
+.slanty::before {
+	position: relative;
+	transform: skew(-20deg);
+	display: block;
+	content: " ";
+	background-image: url('../../assets/images/backgrounds/special-delivery.jpg');
+	background-size: 140px;
+	background-repeat: repeat;
+	height: 100%;
+	width: calc(100vw + 200px);
+	left: calc(-50vw - 113px);
+	background-attachment: fixed;
+}
+
+.slanty1 {
+	opacity: .2;
+}
+
+.slanty2 {
+  /* left: calc(50vw + 2px);
+	width: 60px; */
+	left: 53vw;
+	width: 6vw;
+}
+.slanty2::before {
+   background-image: url('../../assets/images/backgrounds/asteroids.jpg'); 
+	/* background-image: url('../../assets/images/backgrounds/geometrica.png'); */
+	/* background-image: url('../../assets/images/backgrounds/special-delivery.jpg');
+	background-image: url('../../assets/images/backgrounds/cuadros.png');
+	background-image: url('../../assets/images/backgrounds/leather-nunchuck.png');
+	background-image: url('../../assets/images/backgrounds/ocean.jpg'); */
+	
+	
+	
+}
+
+.slanty3 {
+  left: calc(50vw + 102px);
+	opacity: .2;
+}
+.slanty3::before {
+	background-image: url('../../assets/images/backgrounds/geometrica.png');
+}
