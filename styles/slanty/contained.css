@@ -17,11 +17,25 @@ div[class*="slanty-container-"] {
 .email, 
 .letter {
 	position: fixed;
-	top: 11vw;
+	top: 11vh;
 	width: 70vw;
-	padding-top: 42%;
 	left: 15vw;
-	height: 0;
+	height: 42vw;
+	max-height: 78vh;
+}
+.email {
+	z-index: 2;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+
+}
+
+.letter {
+	overflow: hidden;
+	background-color: #f9f7ec;
+	border: 1px solid #f9f7ec;
+	z-index: 1;
 }
 .email::before, 
 .letter::before {
@@ -32,24 +46,12 @@ div[class*="slanty-container-"] {
 	width: 100%;
 }
 
-.email {
-	z-index: 2;
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 3px;
-}
-
-.letter {
-	background-color: #f9f7ec;
-	border: 1px solid #f9f7ec;
-	z-index: 1;
-}
 
 .letter-address {
 	font-family: 'Dancing Script', cursive;
 	position: absolute;
 	left: 7vw;
-	bottom: 4vw;
+	top: 14vw;
 	font-size: 2.2vw;
 }
 
@@ -73,11 +75,19 @@ div[class*="slanty-container-"] {
 	fill: black;
 }
 
+.email-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	overflow: auto;
+}
+
 .email-subject {
 	border-bottom: 1px solid black;
 	width: 100%;
-	position: absolute;
-	top: 0;
 	padding-left: 2.5vw;
 }
 .email-subject h2 {
@@ -86,12 +96,11 @@ div[class*="slanty-container-"] {
 }
 
 .email-content {
-	position: absolute;
-	top: 10vw;
-	left: 2.5vw;
-	width: 47vw;
+	padding-top: 2.5vw;
+	padding-left: 2.5vw;
+	width: 55vw;
 	font-size: 1.2vw;
-	max-height: 30vw;
+	padding-bottom: 6vw;
 }
 
 .email-content h3 {
@@ -100,16 +109,15 @@ div[class*="slanty-container-"] {
 }
 
 .email-reply {
-	position: absolute;
-	bottom: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	text-decoration: none;
-	width: 100%;
 	padding: 1.2vw 3vw 1.2vw 2.5vw;
 	background: #2f2ffb;
 	font-size: 1.6vw;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .letter-cont {
@@ -120,6 +128,9 @@ div[class*="slanty-container-"] {
 .email-reply * {
 	text-decoration: none;
 	color: white;
+}
+
+.email-reply * {
 	margin: 0;
 }
 
@@ -134,7 +145,7 @@ div[class*="slanty-container-"] {
 		position: fixed;
 		background-color: #f9f7ec;
 		border: 1px solid #f9f7ec;
-		top: 56vw;
+		top: calc(42vw + 13vh);
 		width: 70vw;
 		left: 15vw;
 		z-index: 0;
@@ -143,40 +154,28 @@ div[class*="slanty-container-"] {
 		font-size: 2.2vw;
 	}
 	div[class*="slanty-container-"]{
-		left: calc(48vw - 49vh);
+		left: calc(58vw - 56vh);
 	}
 	.email {
-		height: auto;
-		overflow: auto;
-    padding-top: 0;
-    max-height: 73vh;
-	}
-	.email * {
-		position: relative;
-		font-size: 1.1em;
-		top: 0;
+		 height: 100%;
 	}
 	.email-content {
-		padding: 2em 0 4em;
+		padding-top: 1.3em;
+		padding-bottom: 4em;
 		max-height: none;
-		width: 60vw;
+		width: 63vw;
+		font-size: 1em;
 	}
 	.email-subject h2 {
 		font-size: 1.4em;
 		margin: 1em 0;
+		width: 64vw;
 	}
 	.email-content h3 {
 		font-size: 1.154em;
 	}
 	.email-reply {
-		position: fixed;
-    bottom: 16vh;
-    top: auto;
-    width: 70vw;
-    margin-left: -1px;
-    border-bottom-left-radius: 3px;
-		border-bottom-right-radius: 3px;
-		padding: 1em 2.5vw;
+		padding: .7em 2.5vw;
 		font-size: 1.1em;
 	}
 }
