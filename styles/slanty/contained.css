@@ -15,7 +15,8 @@ div[class*="slanty-container-"] {
 }
 
 .email, 
-.letter {
+.letter,
+.info-attr-block--popup {
 	position: fixed;
 	top: 11vh;
 	width: 70vw;

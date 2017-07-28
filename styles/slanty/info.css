@@ -34,8 +34,8 @@
 }
 
 body.popup-show {
-	position: fixed;
-	overflow: none;
+	/* position: fixed; */
+	overflow: hidden;
 }
 body.popup-show::before {
 	width: 100vw;
@@ -50,15 +50,15 @@ body.popup-show::before {
 }
 
 body.popup-show .info-attr-block--popup {
-	display: block;
-	top: 11vh;
-	width: 70vw;
-	height: 43vw;
-	left: 15vw;
+	 display: block; 
+	/* top: 11vh; */
+	/* width: 70vw; */
+	/* height: 43vw; */
+	/* left: 15vw; */
 	background-color: white;
 	padding: 1em;
 	overflow: auto;
-	position: fixed;
+	/* position: fixed; */
 	z-index: 7;
 }
 
