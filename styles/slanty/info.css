@@ -34,7 +34,7 @@
 }
 
 body.popup-show {
-	/* position: fixed; */
+	position: fixed; 
 	overflow: hidden;
 }
 body.popup-show::before {
@@ -50,18 +50,23 @@ body.popup-show::before {
 }
 
 body.popup-show .info-attr-block--popup {
-	 display: block; 
-	/* top: 11vh; */
-	/* width: 70vw; */
-	/* height: 43vw; */
-	/* left: 15vw; */
+	display: block;
+	top: 10vh;
+	width: 80vw;
+	height: 80vh;
+	left: 10vw;
 	background-color: white;
-	padding: 1em;
+	padding: 1em 2em;
 	overflow: auto;
-	/* position: fixed; */
+	position: fixed;
 	z-index: 7;
+	border-radius: 4px;
 }
 
 body.popup-show .slanty {
+	z-index: -1;
+}
+
+body.popup-show .info-attr-block {
 	z-index: -1;
 }

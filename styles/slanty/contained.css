@@ -104,6 +104,10 @@ div[class*="slanty-container-"] {
 	padding-bottom: 6vw;
 }
 
+.email-content a {
+	color: #2020e4;
+}
+
 .email-content h3 {
 	font-size: 1.6vw;
 	margin-top: 0;
