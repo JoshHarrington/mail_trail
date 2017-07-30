@@ -7,7 +7,7 @@
   left: calc(50vw - 69px);
   transform: skew(20deg);
 	overflow: hidden;
-	z-index: 4;
+	z-index: 6;
 }
 .slanty::before {
 	position: relative;
@@ -28,21 +28,11 @@
 }
 
 .slanty2 {
-  /* left: calc(50vw + 2px);
-	width: 60px; */
 	left: 53vw;
 	width: 6vw;
 }
 .slanty2::before {
-   background-image: url('../../assets/images/backgrounds/asteroids.jpg'); 
-	/* background-image: url('../../assets/images/backgrounds/geometrica.png'); */
-	/* background-image: url('../../assets/images/backgrounds/special-delivery.jpg');
-	background-image: url('../../assets/images/backgrounds/cuadros.png');
-	background-image: url('../../assets/images/backgrounds/leather-nunchuck.png');
-	background-image: url('../../assets/images/backgrounds/ocean.jpg'); */
-	
-	
-	
+   background-image: url('../../assets/images/backgrounds/asteroids.jpg');	
 }
 
 .slanty3 {
@@ -51,4 +41,21 @@
 }
 .slanty3::before {
 	background-image: url('../../assets/images/backgrounds/geometrica.png');
+}
+
+
+@media (max-width: 50em) {
+	.slanty2 {
+		left: 0;
+		position: relative;
+		width: 100vw;
+		height: 3em;
+		transform: none;
+		margin: 3em 0;
+	}
+	.slanty::before {
+		width: 100%;
+		left: 0;
+		transform: none;
+	}
 }

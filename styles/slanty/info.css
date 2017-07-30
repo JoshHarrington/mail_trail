@@ -70,3 +70,12 @@ body.popup-show .slanty {
 body.popup-show .info-attr-block {
 	z-index: -1;
 }
+
+@media (max-width: 50em) {
+	.info-attr-block {
+		z-index: 3;
+	}
+	.info-attr-block a {
+		opacity: 1;
+	}
+}
