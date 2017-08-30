@@ -39,6 +39,54 @@ body > div + div {
 .center {
   text-align: center; }
 
+.info-block {
+  background: white;
+  border: 1px solid #efefef;
+  padding: 1.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* border-width: 1px 1px 0; */ }
+
+.info-block svg {
+  float: left;
+  width: 15em;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%; }
+
+.info-block h2 {
+  margin: 0;
+  font-size: 3em;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%; }
+
+.info-block p {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%; }
+
+.block-pos-right svg {
+  float: right; }
+
+.stamp-500 {
+  width: 100%;
+  height: 34px;
+  background: url("../assets/images/special-delivery.jpg");
+  /* background: linear-gradient(
+                    to right, 
+                    rgba(255,255,255,0.7) 0%,
+                    rgba(255,255,255,0.7) 100%
+                ), 
+                url('../assets/images/special-delivery.jpg'); */
+  background-repeat: repeat;
+  background-size: 200px;
+  background-position: -10px -10px; }
+
 .slanty {
   background: white;
   width: 70px;
@@ -342,3 +390,15 @@ body.popup-show .info-attr-block {
     z-index: 3; }
   .info-attr-block a {
     opacity: 1; } }
+
+.logo-block {
+  cursor: default;
+  background: red;
+  padding-top: 7em; }
+
+.logo-block h1 {
+  display: inline-block;
+  margin-left: .3em; }
+
+.logo-block:hover .earth-logo {
+  fill: green; }

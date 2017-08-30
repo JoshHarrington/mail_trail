@@ -1,6 +1,5 @@
-@import './fonts';
-@import './reset';
-@import './type';
-@import './layout';
+@import 'vendor/reset';
 
-@import './slanty/_includes';
+@import 'globals/includes';
+
+@import 'components/includes';
