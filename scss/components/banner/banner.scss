@@ -1,0 +1,39 @@
+.banner {
+	min-height: 10em;
+	padding: 2rem 0;
+	&.grey {
+		background-color: $mt-grey;
+	}
+	.flexy {
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.image {
+		width: 16rem;
+	}
+	@include mq($until: mobile){
+		.flexy {
+			flex-direction: column;
+		}
+		.image {
+			margin-bottom: 1rem;
+			width: 60%;
+		}
+	}
+	@include mq($from: mobile){
+		&.left-align {
+			.image {
+				margin-right: 1rem;
+			}
+		}
+		&.right-align {
+			.text {
+				order: 1;	
+				margin-right: 1rem;
+			}
+			.image {
+				order: 2;
+			}
+		}
+	}
+}
