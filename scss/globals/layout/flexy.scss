@@ -1,3 +1,8 @@
 .flexy {
 	display: flex;
 }
+
+.flexy-central {
+	justify-content: center;
+	flex-wrap: wrap;
+}

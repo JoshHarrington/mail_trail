@@ -1,22 +1,24 @@
 .card {
 	@include mq($until: mobile) {
 		width: 100%;
+	}
+	@include mq($until: tablet) {
 		margin-bottom: 2rem;
 	}
 	@include mq($from: mobile, $until: tablet) {
-		width: calc(33.33% - 12px);
+		width: calc(50% - 1rem);
+		&:first-child {
+			margin-right: 2rem;
+		}
 	}
 	@include mq($from: tablet) {
 		width: calc(33.33% - 18px);
 	}
-	background: $light-grey;
+	background: $mt-light-grey;
 	padding: 1rem;
 	border-radius: 3px;
 	box-shadow: 0px 7px 9px -5px rgba(145,145,145,1);
 	&:not(:last-child) {
-		@include mq($from: mobile, $until: tablet) {
-			margin-right: 18px;
-		}
 		@include mq($from: tablet) {
 			margin-right: 27px;
 		}

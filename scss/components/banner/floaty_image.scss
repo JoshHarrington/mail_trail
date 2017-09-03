@@ -1,0 +1,43 @@
+.floaty-image {
+	position: relative;
+	@include mq($until: mobile) {
+		.image.small {
+			display: none;
+		}
+		.image.wide {
+			width: 80%;
+		}
+	}
+	@include mq($from: mobile, $until: tablet) {
+		.image {
+			width: 12rem;
+		}
+		.text {
+			margin-left: 13rem;
+		}
+	}
+	@include mq($from: tablet, $until: desktop) {
+		.text {
+			margin-left: 17rem;
+		}
+	}
+	@include mq($from: mobile, $until: desktop) {
+		min-height: 19rem;
+		.image.wide {
+			display: none;
+		}
+		.image {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+	@include mq($from: desktop) {
+		.image.small {
+			display: none;
+		}
+		.image.wide {
+			width: 23rem;
+		}
+	}
+}
