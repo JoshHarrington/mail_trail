@@ -16,8 +16,20 @@
 	}
 	background: $mt-light-grey;
 	padding: 1rem;
-	border-radius: 3px;
-	box-shadow: 0px 7px 9px -5px rgba(145,145,145,1);
+	border-radius: 6px;
+	// box-shadow: 0px 7px 9px -5px rgba(145,145,145,.4);
+	&:first-child {
+		box-shadow: inset -3px -3px 0px 0px $mt-blue;
+		background-color: $mt-light-blue;
+	}
+	&:nth-child(2) {
+		box-shadow: inset -3px -3px 0px 0px $mt-yellow;
+		background-color: $mt-light-yellow;
+	}
+	&:nth-child(3) {
+		box-shadow: inset -3px -3px 0px 0px $mt-purple;
+		background-color: $mt-light-purple;
+	}
 	&:not(:last-child) {
 		@include mq($from: tablet) {
 			margin-right: 27px;

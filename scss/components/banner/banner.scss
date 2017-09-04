@@ -1,11 +1,11 @@
 .banner {
 	min-height: 10em;
-	border-top: 1px solid purple;
+	// border-top: 1px solid purple;
 	border-bottom: 1rem solid purple;
 	margin-top: 2rem;
 	&.grey {
 		background-color: $mt-lightest-grey;
-		border-color: $mt-light-yellow;
+		border-color: $mt-yellow;
 	}
 	&.yellow {
 		background-color: $mt-lightest-yellow;
@@ -51,7 +51,7 @@
 		}
 	}
 	@include mq($from: mobile){
-		padding: 5rem 0 0;
+		padding: 8rem 0 0;
 		&.left-align {
 			.image {
 				margin-right: 2rem;

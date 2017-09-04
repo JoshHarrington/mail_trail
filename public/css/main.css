@@ -398,14 +398,13 @@ body.popup-show .info-attr-block {
 
 .banner {
   min-height: 10em;
-  border-top: 1px solid purple;
   border-bottom: 16px solid purple;
   border-bottom: 1rem solid purple;
   margin-top: 32px;
   margin-top: 2rem; }
   .banner.grey {
     background-color: #f7f7f7;
-    border-color: #fff4c0; }
+    border-color: #F9D62B; }
   .banner.yellow {
     background-color: #fffdf5;
     border-color: #F9D62B; }
@@ -460,7 +459,7 @@ body.popup-show .info-attr-block {
                 order: 1; } }
   @media (min-width: 30em) {
     .banner {
-      padding: 5rem 0 0; }
+      padding: 8rem 0 0; }
       .banner.left-align .image {
         margin-right: 2rem; }
       .banner.right-align .text {
@@ -513,14 +512,41 @@ body.popup-show .info-attr-block {
 .plans {
   padding: 32px 0 64px;
   padding: 2rem 0 4rem; }
+  .plans h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-bottom: 2.5rem; }
+
+.sign-up {
+  text-align: center;
+  padding: 2em 0 6em; }
+  .sign-up .button {
+    font-size: 28.8px;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    background-color: #1385dd;
+    padding: 16px 32px;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-top: 1rem;
+    display: inline-block;
+    -webkit-box-shadow: inset 0px 0px 0px 0px red;
+            box-shadow: inset 0px 0px 0px 0px red; }
+  .sign-up .line-separator {
+    display: block;
+    height: 1px;
+    background-color: #D5D5D5;
+    width: 100%;
+    margin-bottom: 48px;
+    margin-bottom: 3rem; }
 
 .card {
   background: #D5D5D5;
   padding: 16px;
   padding: 1rem;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 7px 9px -5px #919191;
-          box-shadow: 0px 7px 9px -5px #919191; }
+  border-radius: 6px; }
   @media (max-width: 29.99em) {
     .card {
       width: 100%; } }
@@ -535,6 +561,18 @@ body.popup-show .info-attr-block {
   @media (min-width: 52.5em) {
     .card {
       width: calc(33.33% - 18px); } }
+  .card:first-child {
+    -webkit-box-shadow: inset -3px -3px 0px 0px #1385dd;
+            box-shadow: inset -3px -3px 0px 0px #1385dd;
+    background-color: #F2FBFF; }
+  .card:nth-child(2) {
+    -webkit-box-shadow: inset -3px -3px 0px 0px #F9D62B;
+            box-shadow: inset -3px -3px 0px 0px #F9D62B;
+    background-color: #fff4c0; }
+  .card:nth-child(3) {
+    -webkit-box-shadow: inset -3px -3px 0px 0px #ce889c;
+            box-shadow: inset -3px -3px 0px 0px #ce889c;
+    background-color: #fbe9ee; }
   @media (min-width: 52.5em) {
     .card:not(:last-child) {
       margin-right: 27px; } }
