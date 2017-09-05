@@ -14,21 +14,36 @@
 	@include mq($from: tablet) {
 		width: calc(33.33% - 18px);
 	}
-	background: $mt-light-grey;
+	background: white;
 	padding: 1rem;
 	border-radius: 6px;
-	// box-shadow: 0px 7px 9px -5px rgba(145,145,145,.4);
+	h3 {
+		padding-bottom: .5rem;
+		border-bottom: 1px solid black;
+	}
 	&:first-child {
 		box-shadow: inset -3px -3px 0px 0px $mt-blue;
-		background-color: $mt-light-blue;
+		border: 1px solid $mt-blue;
+		h3 {
+			border-color: $mt-blue;
+		}
 	}
 	&:nth-child(2) {
+		margin-top: -1rem;
+    margin-bottom: -1rem;
+    font-size: 1.125em;
 		box-shadow: inset -3px -3px 0px 0px $mt-yellow;
-		background-color: $mt-light-yellow;
+		border: 1px solid $mt-yellow;
+		h3 {
+			border-color: $mt-yellow;
+		}
 	}
 	&:nth-child(3) {
 		box-shadow: inset -3px -3px 0px 0px $mt-purple;
-		background-color: $mt-light-purple;
+		border: 1px solid $mt-purple;
+		h3 {
+			border-color: $mt-purple;
+		}
 	}
 	&:not(:last-child) {
 		@include mq($from: tablet) {

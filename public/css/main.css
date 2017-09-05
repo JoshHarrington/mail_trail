@@ -146,7 +146,8 @@ main img {
       margin-left: 2rem; } }
   .banner .container .image.shorty img {
     padding-top: 128px;
-    padding-top: 8rem; }
+    padding-top: 8rem;
+    padding-bottom: 10px; }
   .banner .container .image img,
   .banner .container .image .img--letter-special {
     border-bottom-left-radius: 128px;
@@ -165,9 +166,6 @@ main img {
     @media (max-width: 29.99em) {
       .banner .container .image::before, .banner .container .image::after {
         width: 128%; } }
-    @media (min-width: 30em) and (max-width: 52.49em) {
-      .banner .container .image::before, .banner .container .image::after {
-        width: 132%; } }
   .banner .container .image::before {
     border-left-color: transparent;
     border-top-color: transparent;
@@ -184,26 +182,13 @@ main img {
   padding: 2rem 0 4rem; }
   .plans h2 {
     text-align: center;
-    margin-bottom: 40px;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 56px;
+    margin-bottom: 3.5rem;
+    color: #4F4F4F; }
 
 .sign-up {
   text-align: center;
   padding: 2em 0 6em; }
-  .sign-up .button {
-    font-size: 28.8px;
-    font-size: 1.8rem;
-    border-radius: 4px;
-    background-color: #1385dd;
-    padding: 16px 32px;
-    padding: 1rem 2rem;
-    color: white;
-    text-decoration: none;
-    margin-top: 16px;
-    margin-top: 1rem;
-    display: inline-block;
-    -webkit-box-shadow: inset 0px 0px 0px 0px red;
-            box-shadow: inset 0px 0px 0px 0px red; }
   .sign-up .line-separator {
     display: block;
     height: 1px;
@@ -211,9 +196,12 @@ main img {
     width: 100%;
     margin-bottom: 48px;
     margin-bottom: 3rem; }
+  .sign-up p:last-of-type {
+    margin-bottom: 32px;
+    margin-bottom: 2rem; }
 
 .card {
-  background: #D5D5D5;
+  background: white;
   padding: 16px;
   padding: 1rem;
   border-radius: 6px; }
@@ -231,18 +219,33 @@ main img {
   @media (min-width: 52.5em) {
     .card {
       width: calc(33.33% - 18px); } }
+  .card h3 {
+    padding-bottom: 8px;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid black; }
   .card:first-child {
     -webkit-box-shadow: inset -3px -3px 0px 0px #1385dd;
             box-shadow: inset -3px -3px 0px 0px #1385dd;
-    background-color: #F2FBFF; }
+    border: 1px solid #1385dd; }
+    .card:first-child h3 {
+      border-color: #1385dd; }
   .card:nth-child(2) {
+    margin-top: -16px;
+    margin-top: -1rem;
+    margin-bottom: -16px;
+    margin-bottom: -1rem;
+    font-size: 1.125em;
     -webkit-box-shadow: inset -3px -3px 0px 0px #F9D62B;
             box-shadow: inset -3px -3px 0px 0px #F9D62B;
-    background-color: #fff4c0; }
+    border: 1px solid #F9D62B; }
+    .card:nth-child(2) h3 {
+      border-color: #F9D62B; }
   .card:nth-child(3) {
     -webkit-box-shadow: inset -3px -3px 0px 0px #ce889c;
             box-shadow: inset -3px -3px 0px 0px #ce889c;
-    background-color: #fbe9ee; }
+    border: 1px solid #ce889c; }
+    .card:nth-child(3) h3 {
+      border-color: #ce889c; }
   @media (min-width: 52.5em) {
     .card:not(:last-child) {
       margin-right: 27px; } }
@@ -260,7 +263,8 @@ main img {
   color: #7E7E7E; }
 
 .main-title--lower-note {
-  color: #4F4F4F; }
+  color: #4F4F4F;
+  margin-bottom: 20px; }
 
 header {
   text-align: center;
@@ -293,11 +297,13 @@ header {
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     padding: 8px 12px;
-    margin-right: -8px; }
+    margin-right: -8px;
+    font-size: 14px; }
     .mc_signup_flex input.email:focus {
       outline: none;
       border-color: #7E7E7E; }
   .mc_signup_flex .button {
+    font-size: 14px;
     padding: 8px 12px;
     border-radius: 16px;
     background-color: #1385dd;

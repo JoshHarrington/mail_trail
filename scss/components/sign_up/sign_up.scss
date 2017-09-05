@@ -1,22 +1,25 @@
 .sign-up {
 	text-align: center;
 	padding: 2em 0 6em;
-	.button {
-		font-size: 1.8rem;
-		border-radius: 4px;
-		background-color: $mt-blue;
-		padding: 1rem 2rem;
-		color: white;
-		text-decoration: none;
-		margin-top: 1rem;
-		display: inline-block;
-		box-shadow: inset 0px 0px 0px 0px red;	
-	}
+	// .button {
+	// 	font-size: 1.8rem;
+	// 	border-radius: 4px;
+	// 	background-color: $mt-blue;
+	// 	padding: 1rem 2rem;
+	// 	color: white;
+	// 	text-decoration: none;
+	// 	margin-top: 1rem;
+	// 	display: inline-block;
+	// 	box-shadow: inset 0px 0px 0px 0px red;	
+	// }
 	.line-separator {
 		display: block;
 		height: 1px;
 		background-color: $mt-light-grey;
 		width: 100%;
 		margin-bottom: 3rem;
+	}
+	p:last-of-type {
+		margin-bottom: 2rem;
 	}
 }

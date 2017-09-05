@@ -38,6 +38,7 @@
 	}
 	&.shorty img {
 		padding-top: 8rem;
+		padding-bottom: 10px;
 	}
 	img,
 	.img--letter-special {	
@@ -57,9 +58,6 @@
 		bottom: -15px;
 		@include mq($until: mobile) {
 			width: 128%;
-		}
-		@include mq($from: mobile, $until: tablet) {
-			width: 132%;
 		}
 	}
 	&::before {

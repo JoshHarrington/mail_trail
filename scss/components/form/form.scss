@@ -1,7 +1,6 @@
 .mc_signup_flex {
 	display: flex;
 	justify-content: center;
-	// align-items: stretch;
 	input.email {
 		border: 1px solid $mt-grey;
 		border-right-color: transparent;
@@ -9,12 +8,14 @@
 		border-bottom-left-radius: 16px;
 		padding: 8px 12px;
 		margin-right: -8px;
+		font-size: 14px;
 		&:focus {
 			outline: none;
 			border-color: $mt-mid-grey;
 		}
 	}
 	.button {
+		font-size: 14px;
 		padding: 8px 12px;
 		border-radius: 16px;
 		background-color: $mt-blue;
