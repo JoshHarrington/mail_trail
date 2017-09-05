@@ -20,19 +20,22 @@
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	padding-top: 108%;
+	padding-top: 117%;
 	img {
 		transform: rotate(66deg);
 		border-bottom-left-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
 		position: absolute;
-    top: 90px;
+    top: 79px;
     right: 0px;
 	}
 }
 
 .banner .container .image {
 	position: relative;
+	@include mq($from: mobile) {
+		margin-left: 2rem;
+	}
 	&.shorty img {
 		padding-top: 8rem;
 	}
@@ -52,6 +55,12 @@
 		transform: rotate(45deg);
 		border-radius: 154px;
 		bottom: -15px;
+		@include mq($until: mobile) {
+			width: 128%;
+		}
+		@include mq($from: mobile, $until: tablet) {
+			width: 132%;
+		}
 	}
 	&::before {
 		border-left-color: transparent;
