@@ -260,11 +260,13 @@ main img {
 
 .main-title--top-note {
   font-style: italic;
-  color: #7E7E7E; }
+  color: #7E7E7E;
+  margin-bottom: 8px; }
 
 .main-title--lower-note {
   color: #4F4F4F;
-  margin-bottom: 20px; }
+  margin-bottom: 40px;
+  margin-top: 10px; }
 
 header {
   text-align: center;
@@ -274,7 +276,9 @@ header {
   header h1 {
     font-size: 35.2px;
     font-size: 2.2rem;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   header::after {
     content: " ";
     height: 10px;
@@ -309,7 +313,11 @@ header {
     background-color: #1385dd;
     border: 1px solid #1385dd;
     margin-left: -8px;
-    color: white; }
+    color: white;
+    cursor: pointer; }
+    .mc_signup_flex .button:focus {
+      background-color: #0f69ae;
+      outline: none; }
 
 .logo-block {
   cursor: default;
