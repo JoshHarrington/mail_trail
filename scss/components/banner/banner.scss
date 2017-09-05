@@ -3,32 +3,38 @@
 	// border-top: 1px solid purple;
 	border-bottom: 1rem solid purple;
 	margin-top: 2rem;
-	&.grey {
-		background-color: $mt-lightest-grey;
-		border-color: $mt-yellow;
-	}
-	&.yellow {
-		background-color: $mt-lightest-yellow;
-		border-color: $mt-yellow;
-	}
-	&.blue {
-		background-color: $mt-light-blue;
-		border-color: $mt-blue;
-	}
-	&.red {
-		background-color: $mt-light-red;
-		border-color: $mt-red;
-	}
-	&.purple {
-		background-color: $mt-light-purple;
-		border-color: $mt-purple;
-	}
 	&.space-bottom {
 		padding-bottom: 3rem;
 	}
+
+	&.grey {
+		// background-color: $mt-lightest-grey;
+		border-color: $mt-yellow;
+	}
+	&.yellow {
+		// background-color: $mt-lightest-yellow;
+		border-color: $mt-yellow;
+	}
+	&.blue {
+		// background-color: $mt-light-blue;
+		border-color: $mt-blue;
+	}
+	&.red {
+		// background-color: $mt-light-red;
+		border-color: $mt-red;
+	}
+	&.purple {
+		// background-color: $mt-light-purple;
+		border-color: $mt-purple;
+	}
 	.flexy {
-		align-items: flex-end;
-		justify-content: center;
+		align-items: center;
+		@include mq($from: mobile) {
+			justify-content: flex-start;
+		}
+		@include mq($until: mobile) {
+			justify-content: center;
+		}
 	}
 	.image {
 		width: 16rem;
@@ -36,39 +42,24 @@
 		align-items: baseline;
 	}
 	@include mq($until: mobile){
-		padding: 3rem 0 0;
+		padding: 3rem 0 2rem;
 		.flexy {
 			flex-direction: column;
 			align-items: center;
 		}
 		.image {
 			width: 60%;
-			order: 2;	
 		}
 		.text {
 			margin-bottom: 2rem;
-			order: 1;
 		}
 	}
 	@include mq($from: mobile){
-		padding: 8rem 0 0;
-		&.left-align {
-			.image {
-				margin-right: 2rem;
-			}
-		}
-		&.right-align {
-			.text {
-				order: 1;	
-				margin-right: 2rem;
-			}
-			.image {
-				order: 2;
-			}
-		}
+		padding: 4rem 0;
 		.text {
 			padding-bottom: 1rem;
 			max-width: 24rem;
+			margin-left: 4rem
 		}
 	}
 }

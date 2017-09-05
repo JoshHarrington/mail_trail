@@ -1,0 +1,64 @@
+.image::before,
+.image::after {
+	border: 25px solid $mt-yellow;
+	.banner.grey &,
+	.banner.yellow & {
+		border-color: $mt-yellow;
+	}
+	.banner.blue & {
+		border-color: $mt-blue;
+	}
+	.banner.red & {
+		border-color: $mt-red;
+	}
+	.banner.purple & {
+		border-color: $mt-purple;
+	}
+}
+
+.img--letter-special {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	padding-top: 108%;
+	img {
+		transform: rotate(66deg);
+		border-bottom-left-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+		position: absolute;
+    top: 90px;
+    right: 0px;
+	}
+}
+
+.banner .container .image {
+	position: relative;
+	&.shorty img {
+		padding-top: 8rem;
+	}
+	img,
+	.img--letter-special {	
+		border-bottom-left-radius: 128px;
+		border-bottom-right-radius: 128px;
+		z-index: 2;
+	}
+	&::before,
+	&::after {
+		content: " ";
+		position: absolute;
+		left: -23px;
+		width: 119%;
+		padding-top: 103%;
+		transform: rotate(45deg);
+		border-radius: 154px;
+		bottom: -15px;
+	}
+	&::before {
+		border-left-color: transparent;
+		border-top-color: transparent;
+		z-index: 3;
+	}
+	&::after {
+		z-index: 1;
+	}
+}
