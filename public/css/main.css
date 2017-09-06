@@ -178,8 +178,11 @@ main img {
   font-size: 1.6rem; }
 
 .plans {
-  padding: 32px 0 64px;
-  padding: 2rem 0 4rem; }
+  padding: 32px 0 48px;
+  padding: 2rem 0 3rem; }
+  @media (max-width: 52.49em) {
+    .plans {
+      padding-bottom: 1rem; } }
   .plans h2 {
     text-align: center;
     margin-bottom: 56px;
@@ -189,6 +192,9 @@ main img {
 .sign-up {
   text-align: center;
   padding: 2em 0 6em; }
+  @media (max-width: 52.49em) {
+    .sign-up {
+      padding-top: 1rem; } }
   .sign-up .line-separator {
     display: block;
     height: 1px;
@@ -230,14 +236,20 @@ main img {
     .card:first-child h3 {
       border-color: #1385dd; }
   .card:nth-child(2) {
-    margin-top: -16px;
-    margin-top: -1rem;
-    margin-bottom: -16px;
-    margin-bottom: -1rem;
-    font-size: 1.125em;
     -webkit-box-shadow: inset -3px -3px 0px 0px #F9D62B;
             box-shadow: inset -3px -3px 0px 0px #F9D62B;
     border: 1px solid #F9D62B; }
+    @media (max-width: 29.99em) {
+      .card:nth-child(2) {
+        font-size: 1.125em;
+        margin-left: -5%;
+        margin-right: -5%;
+        width: 110%; } }
+    @media (min-width: 52.5em) {
+      .card:nth-child(2) {
+        margin-top: -1rem;
+        margin-bottom: -1rem;
+        font-size: 1.125em; } }
     .card:nth-child(2) h3 {
       border-color: #F9D62B; }
   .card:nth-child(3) {

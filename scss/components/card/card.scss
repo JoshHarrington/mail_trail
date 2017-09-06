@@ -29,9 +29,17 @@
 		}
 	}
 	&:nth-child(2) {
-		margin-top: -1rem;
-    margin-bottom: -1rem;
-    font-size: 1.125em;
+		@include mq($until: mobile) {
+			font-size: 1.125em;
+			margin-left: -5%;
+			margin-right: -5%;
+			width: 110%;
+		}
+		@include mq($from: tablet) {
+			margin-top: -1rem;
+			margin-bottom: -1rem;
+			font-size: 1.125em;
+		}
 		box-shadow: inset -3px -3px 0px 0px $mt-yellow;
 		border: 1px solid $mt-yellow;
 		h3 {
